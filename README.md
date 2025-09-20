@@ -1,6 +1,6 @@
 # Node.js Chat App 💬
 
-A real-time chat application built with **Node.js**, **Express**, **Socket.IO**, and **React** (frontend).  
+A real-time chat application built with  **React** (frontend).  
 Users can join, chat with others instantly, and log out securely.
 
 ---
@@ -24,17 +24,24 @@ Users can join, chat with others instantly, and log out securely.
 ---
 
 ## 📂 Project Structure
-├── backend/ # Node.js + Express server
-│ ├── server.js # App entry point
-│ ├── socket.js # Socket.IO logic
-│ └── models/ # Database models (users, messages)
-│
-├── frontend/ # React app (Vite/CRA)
-│ ├── src/
-│ │ ├── components/ # Chat UI components
-│ │ ├── pages/ # Login, Register, Chat pages
-│ │ └── App.jsx
-│
 ├── .gitignore
+├── LICENSE
+├── README.md
+├── app.js
+├── bin
+    └── www
+├── model
+    ├── message.model.js
+    └── user.model.js
+├── package-lock.json
 ├── package.json
-└── README.md
+├── public
+    └── stylesheets
+    │   └── style.css
+├── routes
+    ├── index.js
+    └── users.js
+└── views
+    ├── error.pug
+    ├── index.pug
+    └── layout.pug
